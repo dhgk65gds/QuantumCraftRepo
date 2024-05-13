@@ -1,11 +1,3 @@
-function reverseList(head) {
-  let prev = null;
-  let curr = head;
-  while (curr) {
-    const next = curr.next;
-    curr.next = prev;
-    prev = curr;
-    curr = next;
-  }
-  return prev;
-}
+const numbers = [1, 5, 2, 8];
+const max = Math.max(...numbers);
+console.log(max); // 8
